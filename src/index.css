@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Headings */
+h1, h2 {
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Input Fields */
+input, textarea {
+  width: 100%;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 6px #28a745;
+}
+
+/* Buttons */
+button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Redesigned Task Component */
+.task {
+  background-color: #2f2f2f;
+  border-left: 4px solid #28a745; /* Priority indicator */
+  padding: 16px 20px;
+  margin: 14px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.task:hover {
+  background-color: #3b3b3b;
+  transform: scale(1.01);
+}
+
+.task-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.task-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.task-desc {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.task-date {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 4px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Edit & Delete Buttons */
+.edit-btn, .delete-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin-left: 6px;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: #1e1e1e;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+}
+
+/* App Title */
+.app-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Optional Scrollable Task List */
+.task-list {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  color: #aaa;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
